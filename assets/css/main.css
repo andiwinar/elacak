@@ -52,6 +52,10 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
@@ -210,6 +214,12 @@ body {
 
 .home-bisnis__item img {
   margin-bottom: 15px;
+}
+
+.home-bisnis__item img:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+  cursor: pointer;
 }
 
 .section-fitur {
@@ -608,4 +618,30 @@ body {
     padding: 15px;
   }
   
+}
+
+/* animation */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);
+  100% { transform: scale(1); }
+  }
 }
