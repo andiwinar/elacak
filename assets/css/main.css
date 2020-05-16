@@ -1,3 +1,4 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css);
 body {
   font-family: 'Muli';
 }
@@ -499,6 +500,36 @@ body {
   height: 250px;
   border-radius: 15px;
   object-fit: cover;
+}
+
+/* Key feature */
+.keyfeature-list {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.keyfeature-list__icon {
+  float: left;
+  font-size: 30px;
+  color: #4eadfe;
+}
+
+.keyfeature-list__info {
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.keyfeature-list__name {
+  font-family: 'Quicksand';
+  font-size: 16px;
+  color: #4eadfe;
+}
+
+.keyfeature-list__desc {
+  font-size: 14px;
+  color: #777;
+  padding-right: 20px;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1200px) {
