@@ -532,6 +532,11 @@ body {
   margin-bottom: 0;
 }
 
+.key-feature__parent_title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1235px;
